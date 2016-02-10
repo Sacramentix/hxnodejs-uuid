@@ -1,0 +1,14 @@
+{
+  "name": "hxnodejs-uuid",
+  "url": "https://github.com/proletariatgames/hxnodejs-uuid",
+  "license": "MIT",
+  "classPath": "src",
+  "tags": ["nodejs", "uuid"],
+  "description": "Externs for the uuid NPM module",
+  "releasenote": "Initial release",
+  "version": "2.0.1",
+  "contributors": ["Proletariat", "lpetre", "danogles", "waneck"],
+  "dependencies": {
+    "hxnodejs": ""
+  }
+}
