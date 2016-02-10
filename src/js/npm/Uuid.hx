@@ -22,7 +22,7 @@ extern class Uuid {
   @:overload(function(opt:UuidOptions, buffer:Buffer):Buffer {})
   @:overload(function(opt:UuidOptions, buffer:Array<Int>):Array<Int> {})
   @:overload(function(opt:UuidOptions):String {})
-  public static function v1():String;
+  public static function v4():String;
 
   /**
     Parse UUID
