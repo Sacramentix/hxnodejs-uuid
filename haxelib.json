@@ -6,8 +6,8 @@
   "tags": ["nodejs", "uuid"],
   "description": "Externs for the uuid NPM module",
   "releasenote": "Initial release",
-  "version": "2.0.1",
-  "contributors": ["Proletariat", "lpetre", "danogles", "waneck"],
+  "version": "2.0.2",
+  "contributors": ["Proletariat", "ProletariatDev1"],
   "dependencies": {
     "hxnodejs": ""
   }
