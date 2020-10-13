@@ -4,6 +4,8 @@ import js.node.Buffer;
 
 @:jsRequire('uuid')
 extern class Uuid {
+  
+  public static var NIL:String;
   /**
     Generate and return a RFC4122 v1 (timestamp-based) UUID.
    **/
@@ -13,6 +15,8 @@ extern class Uuid {
   @:overload(function(opt:UuidOptions, buffer:Array<Int>):Array<Int> {})
   @:overload(function(opt:UuidOptions):String {})
   public static function v1():String;
+  
+  public static function v3():String;
 
   /**
     Generate and return a RFC4122 v4 UUID.
@@ -24,18 +28,22 @@ extern class Uuid {
   @:overload(function(opt:UuidOptions):String {})
   public static function v4():String;
 
+  public static function v5():String;
+  
+  public static function validate(uuid:String):Bool;
+  public static function version(uuid:String):Int;
+  
   /**
     Parse UUID
    **/
-  @:overload(function(id:String, buffer:Buffer, offset:Int):Buffer {})
-  @:overload(function(id:String, buffer:Buffer):Buffer {})
+
   public static function parse(id:String):Buffer;
 
   /**
     Unparse UUID
    **/
   @:overload(function(buffer:Buffer, offset:Int):String {})
-  public static function unparse(id:Buffer):String;
+  public static function stringify(id:Buffer):String;
 }
 
 typedef UuidOptions = {
